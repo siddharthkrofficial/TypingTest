@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Test</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="logo">SIDDHARTH Kr</div>
+    <div class="container">
+        <button id="reset-btn">&#x21bb;</button>
+        <div class="left-panel">
+            <div id="live-scores-panel">
+                <h2>Recent Results</h2>
+                <div id="recent-results-content">
+                    <p>No recent results.</p>
+                </div>
+            </div>
+        </div>
+        <div class="middle-panel">
+            <h1>Typing Test</h1>
+            <div class="options">
+                <label for="duration">Test Duration (seconds):</label>
+                <select id="duration">
+                    <option value="15">15</option>
+                    <option value="30">30</option>
+                    <option value="60">60</option>
+                    <option value="120">120</option>
+                </select>
+            </div>
+            <div id="text-to-type-container">
+                <div id="text-to-type"></div>
+                <textarea id="user-input" rows="1" disabled></textarea>
+            </div>
+        </div>
+        <div class="right-panel">
+            <div id="results" class="hidden">
+                <h2>Results</h2>
+                <p>Words Per Minute (WPM): <span id="wpm"></span></p>
+                <p>Accuracy: <span id="accuracy"></span></p>
+                <p>Errors: <span id="errors"></span></p>
+                <p>Time Taken: <span id="time-taken"></span>s</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 SIDDHARTH Kr. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
